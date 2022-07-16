@@ -17,7 +17,20 @@ function DefaultScreen({ navigation }) {
         onPress={() => navigation.navigate("postScreen")}
         title="Post Screen"
       />
-      <Button onPress={()=>navigation.navigate("homeDetails")} title="Home Details Screen"/>
+      <Button
+        onPress={() =>
+          navigation.navigate({
+            name: "profileScreen",
+            params: { title: "My Profile" },
+            merge: true,
+          })
+        }
+        title="Profile"
+      />
+      <Button
+        onPress={() => navigation.navigate("homeDetails")}
+        title="Home Details Screen"
+      />
       <StatusBar style="auto" />
     </View>
   );

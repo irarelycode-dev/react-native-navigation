@@ -4,6 +4,7 @@ import DetailsScreen from "./DetailsScreen";
 import DefaultScreen from "./DefaultScreen";
 import PostScreen from "./PostScreen";
 import HomeScreenDetails from "./HomeScreenDetails";
+import ProfileScreen from "./ProfileScreen";
 
 export {
   HomeScreen,
@@ -12,4 +13,5 @@ export {
   ReviseScreen,
   PostScreen,
   HomeScreenDetails,
+  ProfileScreen
 };
