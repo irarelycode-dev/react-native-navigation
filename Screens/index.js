@@ -13,6 +13,10 @@ import LogoTitle from "./StackNavigatorScreens/LogoTitle";
 import MyHomeScreen from "./TabNavigatorScreens/MyHomeScreen";
 import SettingsScreen from "./TabNavigatorScreens/SettingsScreen";
 
+//drawer navigator screens
+import Feed from "./DrawerNavigatorScreens/Feed";
+import Article from "./DrawerNavigatorScreens/Article";
+
 export {
   HomeScreen,
   DefaultScreen,
@@ -25,4 +29,6 @@ export {
   LogoTitle,
   MyHomeScreen,
   SettingsScreen,
+  Feed,
+  Article,
 };
