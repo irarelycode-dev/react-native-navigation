@@ -1,4 +1,3 @@
-import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Button } from "react-native";
 import {
@@ -16,7 +15,6 @@ const Stack = createNativeStackNavigator();
 
 function StackNavigator() {
   return (
-    <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
           name="defaultScreen"
@@ -69,7 +67,6 @@ function StackNavigator() {
         />
         <Stack.Screen name="homeDetails" component={HomeStackNavigator} />
       </Stack.Navigator>
-    </NavigationContainer>
   );
 }
 

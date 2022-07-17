@@ -1,3 +1,4 @@
+//stack screens
 import HomeScreen from "./StackNavigatorScreens/HomeScreen";
 import ReviseScreen from "./StackNavigatorScreens/ReviseScreen";
 import DetailsScreen from "./StackNavigatorScreens/DetailsScreen";
@@ -7,6 +8,10 @@ import HomeScreenDetails from "./StackNavigatorScreens/HomeScreenDetails";
 import ProfileScreen from "./StackNavigatorScreens/ProfileScreen";
 import HomeStackNavigator from "./StackNavigatorScreens/HomeNavigator";
 import LogoTitle from "./StackNavigatorScreens/LogoTitle";
+
+//tab screens
+import MyHomeScreen from "./TabNavigatorScreens/MyHomeScreen";
+import SettingsScreen from "./TabNavigatorScreens/SettingsScreen";
 
 export {
   HomeScreen,
@@ -18,4 +23,6 @@ export {
   ProfileScreen,
   HomeStackNavigator,
   LogoTitle,
+  MyHomeScreen,
+  SettingsScreen,
 };

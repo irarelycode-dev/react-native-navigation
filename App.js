@@ -1,8 +1,13 @@
+import { NavigationContainer } from "@react-navigation/native";
 import StackNavigator from "./Navigators/StackNavigator";
 import TabNavigator from "./Navigators/TabNavigator";
 
 export default function App() {
-  return <StackNavigator />;
+  return (
+    <NavigationContainer>
+      <TabNavigator />
+    </NavigationContainer>
+  );
 }
 
 //<Stack.Screen name="" component={} options={{title:"screen title"}}/>
