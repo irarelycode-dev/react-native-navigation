@@ -1,5 +1,6 @@
 import "react-native-gesture-handler";
 import * as React from "react";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 import * as SecureStore from "expo-secure-store";
 import { NavigationContainer } from "@react-navigation/native";
 import StackNavigator from "./Navigators/StackNavigator";
@@ -54,9 +55,11 @@ export default function App({ navigation }) {
 
   return (
     <AuthContext.Provider value={authContext}>
-      <NavigationContainer>
-        <StackNavigator state={state}/>
-      </NavigationContainer>
+      <SafeAreaProvider>
+        <NavigationContainer>
+          <StackNavigator state={state} />
+        </NavigationContainer>
+      </SafeAreaProvider>
     </AuthContext.Provider>
   );
 }

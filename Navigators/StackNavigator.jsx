@@ -21,7 +21,7 @@ function StackNavigator({ state }) {
   return (
     <Stack.Navigator>
       {state.userToken !== null ? (
-        <>
+        <Stack.Group>
           <Stack.Screen
             name="defaultScreen"
             component={DefaultScreen}
@@ -74,7 +74,7 @@ function StackNavigator({ state }) {
             })}
           />
           <Stack.Screen name="homeDetails" component={HomeStackNavigator} />
-        </>
+        </Stack.Group>
       ) : (
         <>
           <Stack.Screen

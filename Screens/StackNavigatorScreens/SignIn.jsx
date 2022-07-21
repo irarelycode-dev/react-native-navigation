@@ -1,4 +1,4 @@
-import { View, Text, TextInput, Button } from "react-native";
+import { View, Text, TextInput, Button, StyleSheet } from "react-native";
 import React, { useContext } from "react";
 import { AuthContext } from "../../Context/AuthContext";
 
@@ -12,7 +12,7 @@ const SignIn = () => {
     setDetails((value) => ({ ...value, password: text }));
   };
   return (
-    <View>
+    <View style={styles.container}>
       <View>
         <Text>SignIn</Text>
       </View>
@@ -24,5 +24,13 @@ const SignIn = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
 
 export default SignIn;
