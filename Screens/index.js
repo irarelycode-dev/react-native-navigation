@@ -8,6 +8,7 @@ import HomeScreenDetails from "./StackNavigatorScreens/HomeScreenDetails";
 import ProfileScreen from "./StackNavigatorScreens/ProfileScreen";
 import HomeStackNavigator from "./StackNavigatorScreens/HomeNavigator";
 import LogoTitle from "./StackNavigatorScreens/LogoTitle";
+import SignIn from "./StackNavigatorScreens/SignIn";
 
 //tab screens
 import MyHomeScreen from "./TabNavigatorScreens/MyHomeScreen";
@@ -27,6 +28,7 @@ export {
   ProfileScreen,
   HomeStackNavigator,
   LogoTitle,
+  SignIn,
   MyHomeScreen,
   SettingsScreen,
   Feed,
